@@ -18,19 +18,27 @@ background-color:bisque;
 }
 #wrap header nav .gnb li {
     /* display:inline-block;
-    font-size:1.125rem;
-    font-weight:600;
+    
     /* margin:0 60px 0; */
     /* padding-top:37px; */
     /*background-color: aquamarine;
-    line-height:1.5;
-    letter-spacing:-2%; */
+    
+    
     /* margin:37px 0 37px; */
     /* text-align: center; */
     
 }
 
-#wrap header nav .gnb li a {}
+#wrap header nav .gnb li a {
+    /* font-family: 'pretendard', sans-serif; 리셋 초기값에 있으므로 생략*/
+    font-size:1.125rem;
+    font-weight:600;
+    /* line-height:1; *//* 1=100% 150%=1.5 리셋 초기값에 있으므로 생략*/
+    /* letter-spacing:-0.02rem; 리셋 초기값에 있으므로 생략*/
+    /* color:#000; 리셋 초기값에 있으므로 생략*/
+    /* text-align:left; 기본값으므로 작성 필요없음*/
+    
+}
 #wrap header .right_menu {
     
 }     
@@ -41,7 +49,8 @@ background-color:bisque;
 
 }
 #wrap header .right_menu li a {
-    
+    font-size:0.75rem;
+    letter-spacing: 0;
 }
 #wrap header .right_menu li a img {
     
@@ -50,13 +59,25 @@ background-color:bisque;
 #wrap footer {}
 #wrap footer .top {}
 #wrap footer .top .left {}
-#wrap footer .top .left  a {}
-#wrap footer .top .left  a a:nth-child(1) {}
-#wrap footer .top .left  a a:nth-child(2) {}
+#wrap footer .top .left  a {
+    font-size:1rem;
+}
+#wrap footer .top .left a:nth-child(1) {
+    color: #138FBF;
+}
+#wrap footer .top .left a:nth-child(2) {
+    color:#DA2128;
+}
 #wrap footer .top .left  a img {}
 #wrap footer .top .right {}
 /* ==============footer 패밀리사이트+ 사이트맵 공통 */
-#wrap footer .top .right .site {}
+#wrap footer .top .right .site {
+    border:1px #eee solid;
+    padding:7px 10px;
+    font-size: 0.75rem;
+    display:inline;
+    
+}
 /* ==============footer 패밀리사이트+사이트맵 개별 */
 #wrap footer .top .right select {}
 #wrap footer .top .right select option {}
@@ -64,5 +85,17 @@ background-color:bisque;
 #wrap footer .top .right .site_map span {}
 #wrap footer .top .right .site_map img {}
 #wrap footer .bottom {}
-#wrap footer .bottom address {}
-#wrap footer .bottom p {}
+#wrap footer .bottom * {/* *바텀의 모든 자식 자손 *:(모든)*/
+    font-size:0.875rem;
+    line-height:1.35;
+    color:#808080;
+}
+#wrap footer .bottom address {
+    /* color:#808080; */
+    /* font-size:0.875rem;
+    line-height:1.35; */
+}
+#wrap footer .bottom p {
+    /* color:#808080; */
+    font-size:0.875rem;
+}

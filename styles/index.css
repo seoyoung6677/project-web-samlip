@@ -9,30 +9,34 @@ background-color:bisque;
 #wrap header h1 a {
     /* width:56px; height:65px; */
 }
+#wrap header h1 a img {}
 #wrap header nav {
     
 }
 #wrap header nav .gnb {
-    text-align: center;
+    
 }
 #wrap header nav .gnb li {
-    display:inline-block;
+    /* display:inline-block;
     font-size:1.125rem;
     font-weight:600;
     /* margin:0 60px 0; */
     /* padding-top:37px; */
-    background-color: aquamarine;
+    /*background-color: aquamarine;
     line-height:1.5;
-    letter-spacing:-2%;
+    letter-spacing:-2%; */
     /* margin:37px 0 37px; */
+    /* text-align: center; */
     
 }
+
+#wrap header nav .gnb li a {}
 #wrap header .right_menu {
     
 }     
 #wrap header .right_menu li {
-    display:inline;
-    background-color:yellow;
+    /* display:inline;
+    background-color:yellow; */
     
 
 }
@@ -42,3 +46,23 @@ background-color:bisque;
 #wrap header .right_menu li a img {
     
 }
+/* =================================================================================footer */
+#wrap footer {}
+#wrap footer .top {}
+#wrap footer .top .left {}
+#wrap footer .top .left  a {}
+#wrap footer .top .left  a a:nth-child(1) {}
+#wrap footer .top .left  a a:nth-child(2) {}
+#wrap footer .top .left  a img {}
+#wrap footer .top .right {}
+/* ==============footer 패밀리사이트+ 사이트맵 공통 */
+#wrap footer .top .right .site {}
+/* ==============footer 패밀리사이트+사이트맵 개별 */
+#wrap footer .top .right select {}
+#wrap footer .top .right select option {}
+#wrap footer .top .right .site_map {}
+#wrap footer .top .right .site_map span {}
+#wrap footer .top .right .site_map img {}
+#wrap footer .bottom {}
+#wrap footer .bottom address {}
+#wrap footer .bottom p {}

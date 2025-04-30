@@ -1,6 +1,7 @@
 /* index, 모든 sub 적용할 공통 header, footer common.css */
 #wrap {}
 #wrap header {
+    position:relative;/* lnb_bg의 부모 위치 기준 설정 */
     background-color:aqua;
     height:92px;
     padding:0 60px;
@@ -23,11 +24,11 @@
     display:flex; flex-flow:row nowrap;
     
 }
-#wrap header nav .gnb li {
+#wrap header nav .gnb > li {
 margin-right:60px;
 }
-#wrap header nav .gnb li:last-child {margin-right:0;}
-#wrap header nav .gnb li a {
+#wrap header nav .gnb > li:last-child {margin-right:0;}
+#wrap header nav .gnb > li > a {
     /* font-family: 'pretendard', sans-serif; 리셋 초기값에 있으므로 생략*/
     font-size:1.125rem;
     font-weight:600;
@@ -42,6 +43,47 @@ margin-right:60px;
     /* text-align:left; 기본값으므로 작성 필요없음*/
     
 }
+/* ==================서브메뉴 */
+#wrap header nav .gnb > li:first-child:hover .lnb_bg {
+    display:block;}
+#wrap header nav .gnb > li:nth-child(3):hover .lnb_bg {
+    display:block;}
+
+#wrap header nav .gnb > li .lnb_bg {
+    background:rgba(255,255,255,0.8);
+    position:absolute;left:0; top:92px;
+    width:100%; /* absolute 대상일 경우 width 값은 부모설정된 요소의 상대값(%) 으로 결정된다. */
+    padding:50px 0;
+      /* 초기 숨기기(마우스 올릴때만 보이도록) */
+    display:none;
+}
+#wrap header nav .gnb > li .lnb_bg .lnb_depth1 {
+    background-color:yellow;
+    width:max-content;/* 내용에 최대 크기에 맞추겠다. */
+    margin:0 auto;
+    display:flex; text-align:center;
+    flex-flow:row nowrap;/* 줄바꿈없이 정렬 */
+    
+}
+#wrap header nav .gnb > li .lnb_bg .lnb_depth1 > li {
+    margin-right:100px;
+    
+}
+#wrap header nav .gnb > li .lnb_bg .lnb_depth1 > li:last-child{margin-right:0;}
+#wrap header nav .gnb > li .lnb_bg .lnb_depth1 > li > a { 
+
+}
+#wrap header nav .gnb > li .lnb_bg .lnb_depth1 > li .lnb_depth2 {
+    margin-top:14px;
+    border:2px solid red;
+}
+#wrap header nav .gnb > li .lnb_bg .lnb_depth1 > li .lnb_depth2 li {margin-bottom:16px;}
+#wrap header nav .gnb > li .lnb_bg .lnb_depth1 > li .lnb_depth2 li:last-child {margin-bottom:0;}
+#wrap header nav .gnb > li .lnb_bg .lnb_depth1 > li .lnb_depth2 li a {
+    
+}
+
+/* ==================우측 보조메뉴 */
 #wrap header .right_menu {
     background-color:yellow;
     display:flex; flex-flow:row nowrap;
@@ -80,10 +122,7 @@ margin-right:60px;
     background-color:aqua;
     width:1280px;
     margin:0 auto;
-    padding:50px 0;
-    
-    
-    
+    padding:50px 0; 
 }
 #wrap footer .top {
     background-color:lime;

@@ -1,50 +1,48 @@
 /* sns.css */
+#wrap main {text-align:center;}
 #wrap main .path {
     background-color:#F5F3F3;
     text-align:right;
     padding:17px 60px 15px 0;
     font-size:0.75rem;
-    border: 1px solid #f1f1f1;
-    border-left:0; border-right:0;
+    
 }
 #wrap main .path a {
     
 }
-#wrap main .path image {}
+#wrap main .path img {}
 
 #wrap main h1  {
-    text-align:center;
-    background-color: blue;
-    margin-bottom:25px;
-    margin-top:80px ;
+    /* background-color: blue; */
+    margin:80px 0 25px;
     font-size:3.75rem;
     font-weight:700;
 }
-#wrap main {
-    text-align: center;
-} 
+
 #wrap main > p {
-background-color:pink;
+/* background-color:pink; */
 margin-bottom:80px;
 font-size:1.5rem;}
+
 #wrap main .bg {
-    
+    width:100%;
     background-color:#FCFCFC;
+    /* padding:80px; */
 }
 #wrap main .bg .container {
     display:flex;flex-flow:row nowrap;
     justify-content:space-between;
-    background-color:cornflowerblue;
+    /* background-color:cornflowerblue; */
     margin:0 auto;
     width:1280px;
-    margin:60px 30px 35px 30px;
+
 }
 #wrap main .bg .container a {
     background-color:#F5F3F3;
     width:400px; height:400px;
     border:#ddd 1px solid;
     display:flex; flex-flow:column nowrap;
-    justify-content:center; 
+    justify-content:center;  
     
 }
 #wrap main .bg .container a:hover {
@@ -54,21 +52,24 @@ font-size:1.5rem;}
 }
 #wrap main .bg .container a p {}
 #wrap main .bg .container a p img {
-background-color: darkorchid;
-/* margin:60px 30px 35px 30px; */
+/* background-color: darkorchid; */
 
+width:130px; height:130px;
+display:inline-block;
 
 }
 #wrap main .bg .container a h2 {
-    background-color:yellow;
+   /*  background-color:yellow; */
     margin:30px 0; 
     font-size:1.625rem;
     font-weight:700;
 }
-#wrap main .bg .container a h2+p {}
+#wrap main .bg .container a h2+p {/* background-color: aqua; */
+    
+    font-size:0.813rem;
+    color:#4E4B4B;}
+    
 #wrap main .bg .container a p {
     /* background-color: greenyellow; */
-    margin-bottom:73px;
-    font-size:0.813rem;
-    color:#4E4B4B;
+    
 }

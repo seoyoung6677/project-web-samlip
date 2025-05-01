@@ -96,7 +96,7 @@ main .news_all .news_wrap .news_btn #news_prev {}
 
     main .news_all .news_wrap .news_btn #news_prev img {margin-top:20px;
         margin-bottom:20px;}
-main .news_all .news_wrap .news_btn #news_next {}
+main .news_all .news_wrap .news_btn #news_next {transform: scaleX(-1);}
 main .news_all .news_wrap .news_btn #news_next img {
     margin-top:20px;
     margin-bottom:20px;
@@ -118,6 +118,6 @@ main .news_all .all_news:hover {
     background:#000;
     
 }
-main .news_all .all_news:hover img {filter:invert(100%)}
+main .news_all .all_news:hover img {filter:invert(1)}
 main .news_all .all_news:hover em {color:#fff;
 }

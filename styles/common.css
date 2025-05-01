@@ -36,7 +36,6 @@ margin-right:60px;
     display:block;
     height:92px;
     line-height:92px;/* 글자중앙정렬 */
-
     /* line-height:1; *//* 1=100% 150%=1.5 리셋 초기값에 있으므로 생략*/
     /* letter-spacing:-0.02rem; 리셋 초기값에 있으므로 생략*/
     /* color:#000; 리셋 초기값에 있으므로 생략*/
@@ -44,26 +43,27 @@ margin-right:60px;
     
 }
 /* ==================서브메뉴 */
-#wrap header nav .gnb > li:first-child:hover .lnb_bg {
-    display:block;}
-#wrap header nav .gnb > li:nth-child(3):hover .lnb_bg {
-    display:block;}
+#wrap header nav .gnb > li:first-child:hover .lnb_bg {display:block;}
+#wrap header nav .gnb > li:nth-child(2) .lnb_bg {} 
+#wrap header nav .gnb > li:nth-child(3):hover .lnb_bg {display: block;}
+
+#wrap header nav .gnb > li:nth-child(2):hover .lnb_bg {display:block;}
 
 #wrap header nav .gnb > li .lnb_bg {
     background:rgba(255,255,255,0.8);
-    position:absolute;left:0; top:92px;
+    position:absolute;
+    left:0; top:92px;
     width:100%; /* absolute 대상일 경우 width 값은 부모설정된 요소의 상대값(%) 으로 결정된다. */
     padding:50px 0;
       /* 초기 숨기기(마우스 올릴때만 보이도록) */
     display:none;
 }
 #wrap header nav .gnb > li .lnb_bg .lnb_depth1 {
-    background-color:yellow;
+    /* background-color:yellow; */
     width:max-content;/* 내용에 최대 크기에 맞추겠다. */
     margin:0 auto;
     display:flex; text-align:center;
     flex-flow:row nowrap;/* 줄바꿈없이 정렬 */
-    
 }
 #wrap header nav .gnb > li .lnb_bg .lnb_depth1 > li {
     margin-right:100px;
@@ -75,17 +75,45 @@ margin-right:60px;
 }
 #wrap header nav .gnb > li .lnb_bg .lnb_depth1 > li .lnb_depth2 {
     margin-top:14px;
-    border:2px solid red;
+    /* border:2px solid red; */
 }
 #wrap header nav .gnb > li .lnb_bg .lnb_depth1 > li .lnb_depth2 li {margin-bottom:16px;}
 #wrap header nav .gnb > li .lnb_bg .lnb_depth1 > li .lnb_depth2 li:last-child {margin-bottom:0;}
 #wrap header nav .gnb > li .lnb_bg .lnb_depth1 > li .lnb_depth2 li a {
     
 }
+/* =================gnb 2. brands 서브메뉴개별디자인 */
+/* #wrap header nav .gnb > li:nth-child(2) .lnb_bg {} */
+#wrap header nav .gnb > li #lnb_brands {}
+#wrap header nav .gnb > li #lnb_brands .lnb_depth1 {}
+#wrap header nav .gnb > li #lnb_brands .lnb_depth1 > li {}
+#wrap header nav .gnb > li #lnb_brands .lnb_depth1 > li > a {}
+#wrap header nav .gnb > li #lnb_brands .lnb_depth1 > li > a h2 {}
+#wrap header nav .gnb > li #lnb_brands .lnb_depth1 > li > a p {}
+#wrap header nav .gnb > li #lnb_brands .lnb_depth1 > li > a p img{}
+#wrap header nav .gnb > li #lnb_brands .lnb_depth1 > li > .lnb_depth2 {
+    display:flex; flex-flow:row wrap;
+    width:320px;
+    justify-content:space-between;
+}
+#wrap header nav .gnb > li #lnb_brands .lnb_depth1 > li > .lnb_depth2 > li {
+    margin-bottom:26px;
+}
+#wrap header nav .gnb > li #lnb_brands .lnb_depth1 > li > .lnb_depth2 > li >a {}
+#wrap header nav .gnb > li #lnb_brands .lnb_depth1 > li > .lnb_depth2> li> a img{}
+/* =================gnb 2. brands 서브메뉴개별디자인(이미지효과) */
+#wrap header nav .gnb > li #lnb_brands a img {
+    filter:grayscale(80%);
+    border:1px solid #fff;
+}
+#wrap header nav .gnb > li #lnb_brands a:hover img {
+    filter:grayscale(0%);
+    border:1px solid #000;
+}
 
 /* ==================우측 보조메뉴 */
 #wrap header .right_menu {
-    background-color:yellow;
+    /* background-color:yellow; */
     display:flex; flex-flow:row nowrap;
 }     
 #wrap header .right_menu li {
